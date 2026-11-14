@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10121c">
+  <meta name="description" content="THE LAST DOOR - A mysterious 12-level adventure.">
+  <title>THE LAST DOOR | Mystery Adventure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game">
+    <section id="menu" class="screen">
+      <p class="eyebrow">A MYSTERY ADVENTURE</p>
+      <h1>THE LAST DOOR</h1>
+      <p class="subtitle">Every door hides a secret.</p>
+      <button id="new-game">NEW GAME</button>
+      <button id="continue-game">CONTINUE</button>
+      <p class="version">CHAPTERS 01 — 12</p>
+    </section>
+
+    <section id="game-screen" class="screen hidden">
+      <header>
+        <span id="level-name">LEVEL 01</span>
+        <span id="objective">Find the hidden key.</span>
+        <button id="pause-game">PAUSE</button>
+      </header>
+      <canvas id="game-canvas" width="960" height="540"></canvas>
+      <div id="mobile-controls">
+        <button data-move="up">↑</button>
+        <button data-move="left">←</button>
+        <button data-move="down">↓</button>
+        <button data-move="right">→</button>
+        <button id="interact">INTERACT</button>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
